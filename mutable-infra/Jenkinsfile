@@ -11,8 +11,8 @@ pipeline {
         stage('Terraform Init') {
             steps {
                 script { git branch: 'main', url: 'https://github.com/b55-clouddevops/cart.git' }
-                sh "cd ${WORKSPACE}/mutable-infra"
                 sh "terrafile -f ${WORKSPACE}/mutable-infra/env-${ENV}/Terrafile"
+                sh "cd ${WORKSPACE}/mutable-infra"
                 sh "terraform init -backend-config=env-${ENV}/${ENV}-backend.tfvars"
             }
         }
