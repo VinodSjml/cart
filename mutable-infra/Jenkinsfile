@@ -12,6 +12,7 @@ pipeline {
             steps {
                 sh "ls -ltr"
                 sh "pwd"
+                sh "echo $WORKSPACE && ls -ltr $WORKSPACE"
                 sh "ls -ltr mutable-infra/"
                 sh "cd mutable-infra && ls -ltr"
                 sh "terrafile -f env-${ENV}/Terrafile"
