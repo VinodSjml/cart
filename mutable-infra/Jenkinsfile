@@ -10,6 +10,8 @@ pipeline {
     stages {
         stage('Terraform Init') {
             steps {
+                sh "ls -ltr"
+                sh "pwd"
                 sh "terrafile -f env-${ENV}/Terrafile"
                 sh "cd mutable-infra"
                 sh "terraform init -backend-config=env-${ENV}/${ENV}-backend.tfvars"
