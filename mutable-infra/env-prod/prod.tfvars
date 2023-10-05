@@ -1,1 +1,2 @@
-ENV                 = "prod"
+ENV                  = "dev" 
+SPOT_INSTANCE_TYPE   = "t3.medium"
