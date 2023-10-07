@@ -1,4 +1,5 @@
 variable "ENV" {}
+variable "INTERNAL" {}
 variable "COMPONENT" {}
 variable "SPOT_INSTANCE_COUNT" {}
 variable "SPOT_INSTANCE_TYPE" {}
