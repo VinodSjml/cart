@@ -1,7 +1,12 @@
-@Library('roboshop-shared-library@main') _
-
-env.COMPONENT="cart"
-env.APPTYPE="nodejs"
-env.NEXUS_URL="172.31.22.243"
-// nodejs()
-docker()
+pipeline {
+    agent any
+    stages {
+        stage('lint check'){
+            steps{
+                sh "echo installing jslint"
+                sh "npm i jslint"
+                sh " /home/centos/node_modules/jslint/bin/jslint.js server.js"
+            }
+        }
+    }
+}
