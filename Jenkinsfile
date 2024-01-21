@@ -5,7 +5,9 @@ pipeline {
             steps{
                 sh "echo installing jslint"
                 sh "npm i jslint"
+                sh "echo starting lint checks..."
                 sh "/home/centos/node_modules/jslint/bin/jslint.js server.js || true"
+                sh "echo lint checks are completed..!"
             }
         }
     }
