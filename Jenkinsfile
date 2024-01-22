@@ -1,3 +1,3 @@
-@library('roboshop-shared-library@main')_
+@Library('roboshop-shared-library@main') _
 
 nodejs()
