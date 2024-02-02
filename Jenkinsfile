@@ -1,4 +1,5 @@
 @Library('roboshop-shared-library@main') _
 
-env.component="cart"
+env.Component="cart"
+env.AppType="nodejs"
 nodejs()
