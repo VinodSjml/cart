@@ -7,5 +7,6 @@ module "cart"{
     OD_INSTANCE_COUNT   = var.OD_INSTANCE_COUNT
     APP_PORT            = var.APP_PORT
     COMPONENT           = var.COMPONENT
+    INTERNAL            = var.INTERNAL
 
 }

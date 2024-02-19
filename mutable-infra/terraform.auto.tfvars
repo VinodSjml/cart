@@ -5,3 +5,4 @@
 
 APP_PORT  = 8080
 COMPONENT = "cart"
+INTERNAL = true
