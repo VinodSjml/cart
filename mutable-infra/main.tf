@@ -8,5 +8,6 @@ module "cart"{
     APP_PORT            = var.APP_PORT
     COMPONENT           = var.COMPONENT
     INTERNAL            = var.INTERNAL
+    APP_VERSION         = var.APP_VERSION
 
 }
